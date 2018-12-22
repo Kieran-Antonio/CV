@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kieran's Personal Site</title>
+</head>
+
+<body>
+  <!-- This is the boilerplate code (Basic Website template)
+
+Line 1: This tells you the version of HTML, which is HTML 5
+
+Line 2: HTML code consists of a head and <body>
+  - The head holds the information of the webpage and tells the browser
+  how to handle
+  - Look at the head as the foundation of the website or the brain
+
+Line 3: This is the meta element
+- meta elements give extra associated data to the html file
+- charset is a meta attribute and is the encoding for the website
+- Different encodings intepret characters differently
+- Different encodings are used for different languages (Arabic etc)
+- If the encoding cannot intepret a certain character, it will
+come out as gibberish
+- utf-8 is the standard encoding
+- There are other meta attributes such as description or author
+- Meta elements tell the browser what your website is about
+and how to display it in the search engine index
+-->
+  <table cellspacing="20">
+    <!-- This allows us to change the layout of our table.
+The purpose of our table is to align
+our picture and description-->
+    <tr>
+      <td><img src="Wiggle.jpg" alt="Kieran's Profile Pic"></td>
+      <td>
+        <h1>Kieran Arul</h1>
+        <p><em>Software Developer at <strong><a href="https://www.quora.com/">Kieran Inc</a></strong>.</em></p>
+        <p>I love Ricola</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Image can either be URL, if in same folder then file name or can use file path-->
+  <!-- The p means paragraph i.e new line -->
+
+  <hr size="3" noshade>
+
+  <h3>Books and Teaching</h3>
+
+  <ul>
+    <!-- Unordered list i.e bullet points -->
+    <li>Wiggle 1</li>
+    <li>Wiggle 2</li>
+    <li>Wiggle 3</li>
+  </ul>
+
+  <h3>For testing:</h3>
+
+  <ol start="3">
+    <li>This is 3</li>
+    <li>This is 4</li>
+  </ol>
+  <hr>
+  <h3>Work Experience</h3>
+  <p>2010 - 2013 Lead Developer at Apple</p>
+  <p>2010 Researcher at Uber</p>
+  <!-- This looks really ugly so we use a table to improve formatting -->
+
+  <!-- We separate table header and body to isolate either
+so we can make them function in different ways -->
+  <table cellspacing="10">
+    <!-- However best not to use these as table elements
+  should be styled using CSS-->
+    <thead>
+      <tr>
+        <!-- Table Row -->
+        <th>Dates</th>
+        <th>Work Experience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2010 - 2013</td> <!-- Table Data -->
+        <td>Lead Developer at Apple</td>
+      </tr>
+      <tr>
+        <td>2010</td>
+        <td>Researcher at Uber</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+
+  <table>
+    <tr>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>iOS Developer</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Photography</td>
+            <td>⭐</td>
+          </tr>
+          <tr>
+            <td>C++ Developer</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="10">
+          <!-- This is a nested table -->
+          <tr>
+            <td>Python Developer</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Swift Developer</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>C# Developer</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <!-- This creates a link to another page of the website -->
+  <p><a download href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">Download Cheatsheet</a></p>
+  <!-- This makes clicking on it download the link -->
+  <p><a href="contact.html">Contact Details</a></p>
+</body>
+
+</html>
